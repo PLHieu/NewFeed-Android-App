@@ -24,9 +24,10 @@
             android:fontFamily="sans-serif"/>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="vertical"/>
+            android:scrollbars="vertical" />
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

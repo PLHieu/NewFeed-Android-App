@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NewFeedApp</string>
+    <string name="_01_january_1990">01 january 1990</string>
+    <string name="author">Author</string>
+    <string name="title">Title</string>
+    <string name="decs">Decs</string>
+    <string name="source">Source</string>
+    <string name="time">Time</string>
 </resources>

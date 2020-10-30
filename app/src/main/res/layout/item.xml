@@ -1,4 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/img"
+        tools:ignore = "UnusedAttribute"/>
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:text="@string/author"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/source"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:id="@+id/time"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/publishedAd"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar_loadphoto"
+        style="@android:style/Widget.ProgressBar.Small"/>
+
+
+
+
+</LinearLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -38,23 +94,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bar_loadphoto"
-                android:layout_marginTop="70dp" style="@android:style/Widget.ProgressBar.Small"/>
+                android:layout_marginTop="70dp"
+                style="@android:style/Widget.ProgressBar.Small"/>
 
             <TextView
+                android:id="@+id/author"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
-                android:layout_marginRight="160dp"
-                android:text="Author"
+                android:text="@string/author"
                 android:gravity="bottom"
-                android:layout_alignLeft="@id/title"
-                android:layout_alignStart="@id/title"
-                android:layout_alignRight="@id/layoutDate"
-                android:layout_alignTop="@id/layoutDate"
-                android:layout_marginEnd="@id/layoutDate"/>
+                android:layout_alignStart="@+id/title"
+                android:layout_alignEnd="@+id/layoutDate"
+                android:layout_alignTop="@+id/layoutDate"
+                android:layout_marginEnd="@+id/layoutDate"/>
 
             <FrameLayout
                 android:id="@+id/layoutDate"
@@ -62,9 +118,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_white"
                 android:padding="5dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
-                android:layout_margintop="-50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="-50dp"
                 android:layout_below="@+id/img">
 
                 <ImageView
@@ -78,10 +134,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#606060"
-                    android:id="@+id/publishedAt"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginRight="10dp"
-                    android:text="01 january 1990" />
+                    android:id="@+id/publishedAd"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/_01_january_1990" />
 
             </FrameLayout>
 
@@ -93,7 +149,7 @@
                 android:textColor="@color/colorTextTitle"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Title"
+                android:text="@string/title"
                 android:textSize="17sp"
                 android:layout_marginTop="10dp"
                 android:layout_below="@+id/img"
@@ -103,17 +159,17 @@
                 android:id="@+id/desc"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"    
-                android:layout_below="@+id/title"   
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
-                android:text="Decs"/>
+                android:layout_below="@+id/title"
+                android:text="@string/decs"/>
 
             <TextView
                 android:id="@+id/source"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:layout_below="@+id/desc"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-light"
@@ -122,7 +178,7 @@
                 android:maxLines="1"
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
-                android:text="Source"/>
+                android:text="@string/source"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -130,12 +186,12 @@
                 android:layout_below="@+id/desc"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_toRightOf="@+id/source"
+                android:layout_toEndOf="@+id/source"
                 android:maxLines="1"
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
                 android:id="@+id/time"
-                android:text="Time"/>
+                android:text="@string/time"/>
 
 
 
@@ -143,4 +199,5 @@
 
     </androidx.cardview.widget.CardView>
 
-</FrameLayout>
+</FrameLayout>-->
+
