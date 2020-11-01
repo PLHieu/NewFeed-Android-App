@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Article {
+    // cai phan SerializedName de cho khi nhan respone ve, no co the parse tu body sang  article
     @SerializedName("source")
     @Expose
     private Source source;
@@ -24,7 +25,7 @@ public class Article {
     @Expose
     private String url;
 
-    @SerializedName("urltoImage")
+    @SerializedName("urlToImage")
     @Expose
     private String urlToImage;
 

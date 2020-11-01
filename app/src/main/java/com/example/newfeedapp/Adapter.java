@@ -109,11 +109,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
             title = itemview.findViewById(R.id.title);
             desc = itemview.findViewById(R.id.desc);
             author = itemview.findViewById(R.id.author);
-            published_ad = itemview.findViewById(R.id.publishedAd);
+            published_ad = itemview.findViewById(R.id.publishedAt);
             source = itemview.findViewById(R.id.source);
             time = itemview.findViewById(R.id.time);
             _imageView = itemview.findViewById(R.id.img);
-            _progressBar = itemview.findViewById(R.id.bar_loadphoto);
+            _progressBar = itemview.findViewById(R.id.prograss_load_photo);
             _onItemClickListener = onItemClickListener;
         }
 
