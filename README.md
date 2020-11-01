@@ -8,7 +8,7 @@ I have used:
 
 ## Features
 ### Reading Top Headlines
-![Top Headlines](https://github.com/PLHieu/NewFeed-Android-App/blob/main/20201101_102909_1_.gif){:height="50%" width="50%"}
+<img src="https://github.com/PLHieu/NewFeed-Android-App/blob/main/20201101_102909_1_.gif" width="50%" height="50%">
 
 ### Finding News based on keyword
-![Finding News](https://github.com/PLHieu/NewFeed-Android-App/blob/main/20201101_103045_1_.gif){:height="50%" width="50%"}
+<img src="https://github.com/PLHieu/NewFeed-Android-App/blob/main/20201101_103045_1_.gif" width="50%" height="50%">
